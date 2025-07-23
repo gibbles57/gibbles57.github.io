@@ -1,0 +1,102 @@
+html {
+
+}
+
+body {
+	overflow: hidden;
+}
+
+#particles-js {
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #323232;
+	background-position: 50% 50%;
+	z-index: -50000;
+}
+
+.prevent-select {
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+#card_template {
+	position: absolute;
+	height: 126px;
+	width: 86px;
+	margin: 0px -10px;
+	background-color: #505050;
+	flex: 0 0 auto;
+}
+
+.card {
+	position: relative;
+	height: 126px;
+	width: 86px;
+	margin: 0px -10px;
+	background-color: #505050;
+	flex: 0 0 auto;
+}
+
+.card:hover {
+	z-index: 500;
+}
+
+.card > p {
+	position: absolute;
+	text-align: center;
+	width: 90%;
+	margin: 0px;
+	/*bottom: 2%;*/
+	top: 64%;
+	left: 5%;
+	color: #f0f0f0;
+	font-size: 9px;
+}
+
+.card > img {
+	position: absolute;
+	height: 45%;
+	width: 90%;
+	margin: 0px;
+	top: 8%;
+	left: 50%;
+	font-size: 9px;
+	translate: -50% 0px;
+}
+
+.card > span {
+	position: absolute;
+	text-align: center;
+	width: 90%;
+	left: 5%;
+	z-index: 2;
+	color: #f0f0f0;
+	text-shadow: -1px -1px 0 #505050, 1px -1px 0 #505050, -1px 1px 0 #505050, 1px 1px 0 #505050;
+	font-size: 9px;
+}
+
+#card_holder {
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 800px;
+	height: 100px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+img {
+  pointer-events: none;
+}
+
+.bss_text {
+	font-family: "Lucida Console", monospace;
+}
+

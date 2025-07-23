@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="interface.css">
+	<title>Bee Swarm Blitz</title>
+	<link rel="icon" type="image/x-icon" href="images/favicons/favicon.ico">
+</head>
+<body id="body" class="prevent-select" onload="init()">
+	<div id="particles-js">
+	<button style="position: absolute; top: 5%; left: 5%;" onclick="startRound()">start round</button>
+	<button style="position: absolute; top: 5%; left: 11%;" onclick="genCard('bee', 'none', 'Commander')">gen bee</button>
+	<button style="position: absolute; top: 5%; left: 16%;" onclick="genHand(20)">show hand</button>
+	<div id="card_template" class="card bss_text" style="visibility: hidden;">
+		<span style="top: 10%; transform: translateY(-50%);"></span>
+		<img src="images/empty.png">
+		<span style="top: 47%;"></span>
+		<p>Beequip<br><span></span><br>Mutation<br><span></span></p>
+		<span style="top: 55%;"></span>
+	</div>
+	<div id="card_holder"></div>
+	<script src="particles.js"></script>
+	<script src="data.js"></script>
+	<script src="classes.js"></script>
+	<script src="main2.js"></script>
+	</div>
+</body>
+</html>
